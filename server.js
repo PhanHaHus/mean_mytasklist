@@ -28,7 +28,7 @@ app.use('/api', tasks);
 //     console.log('Server started on port '+port);
 // });
 
-http.listen(process.env.PORT || port, function(){
+app.listen(process.env.PORT || port, function(){
   console.log('listening on', http.address().port);
 });
 
